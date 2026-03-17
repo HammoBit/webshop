@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "name": "BA Large Totebag",
+    "price": 17.75,
+    "image": "https://imgproxy.fourthwall.com/_07oOSerNeeb45k1l1PIc2a-o8IBI0ESuKWM9CWNrBI/w:1920/sm:1/enc/b6Ce1BIvJBno3R38/7Xw2mjyG0tFDEPmW/ARdcP-5j9RgmGAcM/zndKTDA0yGu71UV8/AHNbT4Nd08lUKIIx/xWt4OIF4dd_CcmI6/2YJm61SFuWdLocEA/8w0_JxzmlcD43J0l/xELrXSfsWyvp9-ds/vRKZAvqIJzL36crz/CtJw_0wW6cLWXHUB/I8W6NufXLreXza0Y/69ogESO-j_nH41OF/RvUKsqfdkPsr0YCu/riYLOyolopc"
+  },
+  {
+    "id": 1,
+    "name": "Totebag",
+    "price": 21.30,
+    "image": "https://imgproxy.fourthwall.com/MKrfCYfMyanMIkgOnP7Pa8-Zunj_o5xpSKixGGMOhmQ/w:1920/sm:1/enc/DtBqIxWMWVfwDsbu/Tt8NJs1EFY-tLQQm/HWcaGiaLaZZFZv38/A2wm28EseH7RLoQx/H1ie9S8pbL0NzOiQ/Y7aMtpNRZH9neG6t/suE4wDJbWxkOLi6T/fRtRZckGGIJxEd88/V7zhpF0CDYin5Mbp/VkQW0zl9pmw0mcmO/8z9_BeQon7qXPlxc/QFho8G45ZJYgOdbO/RgsCLPuetCwbueAn/KDXtxioMBg3cLPDK/vM6oC2vdZrY"
+  },
+  {
+    "id": 2,
+    "name": "Laptop Sleeve",
+    "price": 16.86,
+    "image": "https://imgproxy.fourthwall.com/ocTnqK_ILI88L36ZHLSU2BhzqMME_PwPrYmqTVZT-uw/w:1920/sm:1/enc/a87zXe9xZ7xIvcNO/T-42z2lDIZ0Swvd7/Oa58rvNJl2k_HF3f/-RcZRfjGo4fZaM3Q/QmNW8Tl6RSYYwdMY/B-XRWjkU6dy5D0Y_/5zW55gLoTI5NhSVi/C3mv4z1aJV6f32lR/IcTfM5HlMgpGYImC/lyXJLPTIokv7I9pf/TJ5173FRF92bSFjp/yIEmiwzcgotd3M72/ZHOvW9Cnmp9SiDc_/Y7X0jhhz1m-RTtul/iNlXlvsSMso"
+  },
+  {
+    "id": 3,
+    "name": "Meta Quest 3S",
+    "price": 299.24,
+    "image": "https://m.media-amazon.com/images/I/51FV3RRs2fL._AC_SX679_.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Laptop houder - Laptopsteun",
+    "price": 12.66,
+    "image": "https://media.s-bol.com/qXvgYKZyO6Wy/7PVYnj/550x737.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Programmeur Koffiemok",
+    "price": 15.95,
+    "image": "https://media.s-bol.com/v4OWzwoVYVG0/y8p1g7w/550x550.jpg"
+  }
+]

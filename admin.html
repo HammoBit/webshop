@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#f7ede2]">
+
+<div class="max-w-6xl mx-auto p-8">
+  <h1 class="text-3xl font-bold mb-6">Admin Panel</h1>
+
+
+  <div class="flex gap-4 mb-6">
+    <button id="products-tab" class="text-black px-4 py-2 rounded font-semibold border border-black">
+      Producten
+    </button>
+    <button id="orders-tab" class="text-black px-4 py-2 rounded font-semibold border border-black">
+      Bestellingen
+    </button>
+  </div>
+
+
+  <div id="products-page">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Producten</h2>
+      <div class="flex gap-2">
+     
+        <button onclick="resetProducts()" class="border border-black text-black font-semibold px-3 py-2 rounded hover:bg-[#ffa200] transition">
+          <i class="fa-solid fa-rotate"></i> Reset Producten
+        </button>
+      
+        <a href="add-product.html" class="bg-[#ffa200] px-3 py-2 rounded border border-black">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <table class="w-full bg-white">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2">ID</th>
+          <th class="p-2">Naam</th>
+          <th class="p-2">Prijs</th>
+          <th class="p-2">Image</th>
+          <th class="p-2">Acties</th>
+        </tr>
+      </thead>
+      <tbody id="products-table"></tbody>
+    </table>
+  </div>
+
+  
+  <div id="orders-page" class="hidden mt-6">
+    <h2 class="text-xl font-bold mb-4">Bestellingen</h2>
+    <table class="w-full bg-white">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="p-2">ID</th>
+          <th class="p-2">Totaal</th>
+          <th class="p-2">Datum</th>
+        </tr>
+      </thead>
+      <tbody id="orders-table"></tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

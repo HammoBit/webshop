@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>BIT Webshop</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+
+  <header class="bg-[#f7ede2] shadow">
+
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 p-4">
+
+
+      <div class="flex items-center space-x-2">
+        <img src="images/bit-logo.png" class="w-20 h-20 object-cover">
+        <h1 class="text-xl font-bold">BIT Academy Webshop</h1>
+      </div>
+
+
+      <a href="admin-login.html"
+        class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
+        <span
+          class="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-[#ffa200] group-hover:translate-x-0 ease">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </span>
+        <span
+          class="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">Login
+          Admin</span>
+        <span class="relative invisible">Login Admin</span>
+      </a>
+
+
+      <div class="relative">
+        <a href="cart.html" class="text-2xl">
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <span id="cart-dot"
+            class="hidden absolute -top-1 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#ffa200] rounded-full"></span>
+
+        </a>
+      </div>
+
+
+    </div>
+  </header>
+
+
+  <section class="relative h-screen bg-cover bg-center"
+    style="background-image:url('https://cig-eu.com/sites/default/files/styles/full_width/public/2021-10/IMG_7716.JPG?h=9a3796bf&itok=FdkUhQGn');">
+
+
+    <div class="font-bold font-serif absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+
+      <div class="text-center text-white">
+
+        <h1 class="text-4xl font-bold mb-10">
+          Welkom bij <span class="text-[#ffa200]">Bit Academy</span> Webshop
+        </h1>
+
+        <p class="mb-10 text-lg">
+          Ontdek onze nieuwste producten
+        </p>
+
+        <a href="#products"
+          class="border border-[#ffa200] relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all rounded hover:bg-white group">
+          <span
+            class="w-48 h-48 rounded rotate-[-40deg] bg-[#ffa200] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span
+            class="font-bold relative w-full text-left text-[#ffa200] transition-colors duration-300 ease-in-out group-hover:text-black">Bekijk
+            producten</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div id="products" class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"></div>
+
+
+
+  <footer class="bg-[#f7ede2] text-black py-10 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex justify-center items-center gap-2 mb-6 flex-wrap">
+        <h1 class="font-bold text-6xl font-serif">BIT ACADEMY WEBSHOP</h1>
+      </div>
+      <div class="text-center mb-6 space-y-2 text-sm">
+        <p>Bit Academy <a href="https://maps.app.goo.gl/xijZrBYMSFyYf8988" target="_blank"
+            class="hover:text-yellow-500 font-semibold">Muntinglaan 3, 9727 JT Groningen</a></p>
+        <p>Telefoon: <a href="tel:08006677885" class="hover:text-yellow-500 font-semibold">0800 6677885</a></p>
+        <p>Website: <a href="https://www.bit-academy.nl/en/locatie/groningen" target="_blank"
+            class="hover:text-yellow-500 font-semibold">Bit Academy</a></p>
+      </div>
+      <div class="flex justify-center gap-4 mb-6 text-xl">
+        <a href="https://www.facebook.com/wearebitacademy/" class="hover:text-blue-500"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@bitacademy" class="hover:text-red-400"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/bit_academy_/" class="hover:text-pink-500"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/bit-academy-nl/" class="hover:text-blue-600"><i
+            class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="text-center text-gray-600 text-xs">&copy; <span id="year"></span> <a href="https://mhammo.nl"
+          target="_blank" class="hover:text-[#ffa200]">M_Hammo</a>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

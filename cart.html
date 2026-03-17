@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body class="bg-gray-100">
+
+
+<header class="bg-[#f7ede2] shadow">
+
+<div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+
+<div class="flex items-center space-x-2">
+<img src="images/bit-logo.png" class="w-20 h-20 object-cover">
+<h1 class="text-xl font-bold">BIT Academy Webshop</h1>
+</div>
+
+
+
+<a href="index.html" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-black rounded-full shadow-md group">
+     <span class="absolute inset-0 flex items-center justify-center w-full h-full text-black duration-300 -translate-x-full bg-[#ffa200] group-hover:translate-x-0 ease">
+         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+     </span>
+     <span class="absolute flex items-center justify-center w-full h-full text-black transition-all duration-300 transform group-hover:translate-x-full ease">Home</span>
+     <span class="relative invisible">Home</span>
+ </a>
+
+</div>
+
+</header>
+
+
+<div class="max-w-4xl mx-auto p-4 sm:p-8">
+
+
+<div class="flex justify-between items-center mb-6">
+<h1 class="text-2xl font-bold">Winkelwagen</h1>
+
+<button id="clear-cart-btn" onclick="clearCart()" 
+class="hidden text-red-500 text-xl hover:text-red-700 transition">
+<i class="fa-solid fa-trash"></i>
+</button>
+</div>
+
+
+
+<div id="cart-items" class="space-y-4"></div>
+
+
+<div id="cart-total"
+class="text-right text-xl font-semibold mt-6">
+</div>
+
+
+<button id="checkout-btn"
+class="border border-black w-full py-3 mt-6 hover:bg-[#ffa200] font-semibold">
+
+Afrekenen
+
+</button>
+
+</div>
+
+
+<script src="js/cart.js"></script>
+
+</body>
+</html>
