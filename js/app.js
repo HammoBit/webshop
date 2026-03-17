@@ -42,7 +42,7 @@ function displayProducts() {
     products.forEach((product) => {
         productContainer.innerHTML += `
 <div class="bg-[#f7ede2] shadow p-4 text-center">
-<img src="${product.image}" class="w-full h-48 object-cover">
+<img src="${product.image}" class="w-full h-48 object-cover" alt="${product.name}">
 <h2 class="text-lg font-semibold mt-2">${product.name}</h2>
 <p class="mb-3">€${product.price}</p>
 <button onclick="addToCart(${product.id})"

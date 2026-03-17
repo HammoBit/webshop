@@ -37,7 +37,7 @@ function displayProducts() {
             <td class="p-2">${product.name}</td>
             <td class="p-2">€${product.price}</td>
             <td class="p-2">
-                <img src="${product.image}" class="w-16 h-16 object-cover mx-auto">
+                <img src="${product.image}" class="w-16 h-16 object-cover mx-auto" alt="${product.name}">
             </td>
             <td class="p-2 space-x-3">
                 <a href="edit-product.html?id=${product.id}" class="text-blue-500 font-semibold">Edit</a>
