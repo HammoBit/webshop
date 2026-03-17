@@ -49,7 +49,7 @@ Gebruikers kunnen producten bekijken, toevoegen aan de winkelwagen en afrekenen.
 
 # Online versie
 
-- Project is te bekijken op: [voeg hier link in als beschikbaar]
+- Project is te bekijken op: [https://bitwebshop.netlify.app/]
 
 # Notities
 
