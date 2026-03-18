@@ -93,6 +93,12 @@ function clearCart() {
     localStorage.removeItem("cart");
     window.location.reload();
 }
+const clearButton = document.getElementById("clear-cart-btn")
+
+
+clearButton.addEventListener("click", function() {
+    clearCart()
+})
 
 document.getElementById("checkout-btn").addEventListener("click", function () {
     const cart = getCart();

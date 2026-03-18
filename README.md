@@ -51,4 +51,8 @@ Admin kan producten beheren en bestellingen zien.
 
 ## Notities
 - Form validatie aanwezig bij toevoegen product  
-- Winkelwagen en bestellingen worden opgeslagen in localStorage  
+- Winkelwagen en bestellingen worden opgeslagen in localStorage 
+
+## Login Admin
+- naam = admin
+- wachtwoord = 1234

@@ -9,7 +9,6 @@ function editProduct() {
     const name = document.getElementById("name").value;
     const price = document.getElementById("price").value;
     const imageUrl = document.getElementById("image-url").value;
-    const file = document.getElementById("image-file") ? document.getElementById("image-file").files[0] : null;
 
     if (name === "") {
         alert("Naam is verplicht");
@@ -38,24 +37,15 @@ function editProduct() {
         return;
     }
 
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            products[id] = {
-                id: parseInt(id),
-                name: name,
-                price: parseFloat(price),
-                image: e.target.result,
-            };
-            localStorage.setItem("products", JSON.stringify(products));
-            window.location.href = "admin.html";
-        };
-        reader.readAsDataURL(file);
-        return;
-    }
-
     products[id].name = name;
     products[id].price = parseFloat(price);
     localStorage.setItem("products", JSON.stringify(products));
     window.location.href = "admin.html";
 }
+
+const editButton = document.getElementById("edit-btn")
+
+
+editButton.addEventListener("click", function() {
+    editProduct()
+})

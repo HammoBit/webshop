@@ -9,3 +9,9 @@ function login() {
         alert("Wrong login");
     }
 }
+const loginButton = document.getElementById("login-btn")
+
+
+loginButton.addEventListener("click", function() {
+    login()
+})

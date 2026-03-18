@@ -26,22 +26,9 @@ function addProduct() {
 
     window.location.href = "admin.html";
 }
+const addButton = document.getElementById("add-btn")
 
-const file = document.getElementById("image-file") ? document.getElementById("image-file").files[0] : null;
-let products = JSON.parse(localStorage.getItem("products")) || [];
 
-if (file) {
-    const reader = new FileReader();
-    reader.onload = function (e) {
-        products.push({
-            id: products.length,
-            name: document.getElementById("name").value.trim(),
-            price: parseFloat(document.getElementById("price").value),
-            image: e.target.result,
-        });
-
-        localStorage.setItem("products", JSON.stringify(products));
-        window.location.href = "admin.html";
-    };
-    reader.readAsDataURL(file);
-}
+addButton.addEventListener("click", function() {
+    addProduct()
+})

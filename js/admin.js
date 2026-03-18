@@ -37,7 +37,7 @@ function displayProducts() {
             <td class="p-2">${product.name}</td>
             <td class="p-2">€${product.price}</td>
             <td class="p-2">
-                <img src="${product.image}" class="w-16 h-16 object-cover mx-auto" alt="${product.name}">
+                <img src="${product.image}" class="w-16 h-16 object-cover mx-auto">
             </td>
             <td class="p-2 space-x-3">
                 <a href="edit-product.html?id=${product.id}" class="text-blue-500 font-semibold">Edit</a>
@@ -103,6 +103,13 @@ ordersTab.addEventListener("click", () => {
     ordersTab.classList.add("bg-[#ffa200]", "text-black");
     productsTab.classList.remove("bg-[#ffa200]", "text-black");
 });
+
+const resetButton = document.getElementById("reset-products-btn")
+
+
+resetButton.addEventListener("click", function() {
+    resetProducts()
+})
 
 
 displayProducts();
